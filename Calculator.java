@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
-public class Base {
+public class Calculator {
 
   public static void printString(String text) {   // General method for printing messages
     System.out.println(text);
   }
 
-  public static void main(String[] ags) {
+  public static void start() {
 
-    char operation; // store operator for calculation
+    char operation;                                   // store operator for calculation
     double secondNumber, firstNumber = 0, result = 0; // store entered numbers and result
-    Scanner inputChar = new Scanner(System.in); // for scanning entered operators
+    Scanner inputChar = new Scanner(System.in);       // for scanning entered operators
 
-    printString("Welcome to Calculator Application \n Please use + - * / as operator \n");
+    printString("\n\nWelcome to Calculator Application \n Please use:\n+ to Add\n- to Subrtract\n* to Multiply\n/ to Divide");
 
     do {
 
